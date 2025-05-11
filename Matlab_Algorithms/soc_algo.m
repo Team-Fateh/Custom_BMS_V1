@@ -32,6 +32,7 @@ voltage_curve_23C = [4.2 4.05 3.95 3.85 3.75 3.65 3.55 3.45 3.30 2.50];
 
 for i=2:length(time)
     delta_q = discharge_curr_pack(i)*dt;
+    %coulomb counting 
     SoC(i) = SoC(i-1) - ((delta_q / q_nom_pack)*e) ;
     SoC(i) = max(0, min(1, SoC(i)));
 
