@@ -2,9 +2,9 @@
 #define CHARGING_STATE_H
 
 typedef enum{
-	voltage;
-	current;
-	temperature;
+	voltage,
+	current,
+	temperature
 }charging_parameters;
 
 
@@ -12,7 +12,7 @@ typedef enum{
 	range_voltage,
 	range_current,
 	range_temperature,
-	maximum_chargeable_voltage;
+	maximum_chargeable_voltage
 
 }charging_sof_Error_Checks;
 
