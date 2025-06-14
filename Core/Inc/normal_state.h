@@ -1,11 +1,11 @@
 #ifndef __NORMAL_STATE_H
 #define __NORMAL_STATE_H
 
-typedef enum{
-	voltage,
-	current,
-	temperature
-}input_parameters;
+#define NUM_CELLS 112
+
+float voltage[NUM_CELLS];
+float current[NUM_CELLS];
+float temperature[NUM_CELLS];
 
 typedef enum{
 	range_voltage,
