@@ -23,4 +23,7 @@ uint8_t SELFTEST_TestSPI(void);
 
 uint8_t SELFTEST_TestGPIO(void);
 
+void test_SPI(void);
+
+
 #endif /* INC_SELF_TEST_H_ */
