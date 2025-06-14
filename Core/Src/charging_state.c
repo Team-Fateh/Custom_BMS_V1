@@ -1,23 +1,23 @@
 #include "charging_state.h"
 
-void charging_parameter_read(charging_parameters){
+void charging_parameter_read(float voltage,float current, float temperature){
 	//get voltage,current and temperature from sensors
 }
 
-void charging_soc_Calculate(charging_parameters){
+void charging_soc_Calculate(float voltage,float current, float temperature){
 	//soc calculation algorithm
 }
 
 
-void charging_soh_Calculate(charging_parameters){
+void charging_soh_Calculate(float voltage,float current, float temperature){
 	//soh calculation algorithm
 }
 
 
-void charging_sop_Calculate(charging_parameters){
+void charging_sop_Calculate(float voltage,float current, float temperature){
 	//sop calculation algorithm
 }
-void charge_complete(charging_parameters,charging_sof_Error_Checks){
+void charge_complete(float voltage,float current, float temperature,charging_sof_Error_Checks){
 	//all cells reached their maximum chargeable voltage
 	//disconnect the charger with the battery pack
 	//charging is complete
@@ -36,7 +36,7 @@ void charging_sof_Calculate(charging_sof_Error_Checks){
 			// call fault handler function
 }
 
-void charging_cell_balancing(charging_parameters,charging_sof_Error_Checks){
+void charging_cell_balancing(float voltage,float current, float temperature,charging_sof_Error_Checks){
 	//read cell voltages
 	//periodically - passively balance the cells
 	//use shunt resistors
