@@ -19,7 +19,7 @@ typedef enum{
 void charging_parameter_read(float voltage,float current, float temperature);
 void charging_cell_balancing(float voltage,float current, float temperature,charging_sof_Error_Checks);
 //this function must also be called if any cell voltage reaches its maximum voltage
-void charging_soc_Calculate(float voltage,float current, float temperatur);
+void charging_soc_Calculate(float voltage,float current, float temperature);
 void charging_sof_Calculate(charging_sof_Error_Checks);
 void charging_sop_Calculate(float voltage,float current, float temperature);
 void charging_soh_Calculate(float voltage,float current, float temperature);
