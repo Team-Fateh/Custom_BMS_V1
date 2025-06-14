@@ -14,13 +14,13 @@ typedef enum{
     minimum_cell_voltage
 }sof_Error_Checks;
 
-void parameter_read(input_parameters);
-void soc_Calculate(input_parameters);
+void parameter_read(float voltage,float current, float temperature);
+void soc_Calculate(float voltage,float current, float temperature);
 void sof_Calculate(sof_Error_Checks);
-void sop_Calculate(input_parameters);
-void soh_Calculate(input_parameters);
+void sop_Calculate(float voltage,float current, float temperature);
+void soh_Calculate(float voltage,float current, float temperature);
 void fan_speed_Control(int temperature);
-void cell_balancing(input_parameters);
-void discharge_check(input_parameters,sof_Error_Checks);
+void cell_balancing(float voltage,float current, float temperature);
+void discharge_check(float voltage,float current, float temperature,sof_Error_Checks);
 //this function checks if any cell is discharged below the minimum threshold voltage
 //fault handler include from main for each error
