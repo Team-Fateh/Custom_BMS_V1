@@ -1,15 +1,15 @@
 #include "normal_state.h"
 
-void parameter_read(input_parameters)
+void parameter_read(float voltage,float current, float temperature)
 {
 	//get voltage,current,temperature from sensors
 }
-void soc_Calculate(input_parameters)
+void soc_Calculate(float voltage,float current, float temperature)
 {
 	//soc calculation using algorithms by yash
 }
 
-void soh_Calculate(input_parameters)
+void soh_Calculate(float voltage,float current, float temperatures)
 {
 	//soh using algorithms
 }
@@ -23,7 +23,7 @@ void sof_Calculate(sof_error_checks)
 			// call fault handler function
 }
 
-void sop_Calculate(input_parameters)
+void sop_Calculate(float voltage,float current, float temperature)
 {
 	// sop_Calculation using algorithms
 }
@@ -32,7 +32,7 @@ void fan_speed_Control(int temperature)
 {
 	if(// temperature above certain values start fans with different rpm using pwm)
 }
-void cell_balancing(input_parameters){
+void cell_balancing(float voltage,float current, float temperature){
 	    //read cell voltages
 		//periodically - passively balance the cells
 		//use shunt resistors
