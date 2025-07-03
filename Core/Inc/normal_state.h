@@ -24,3 +24,17 @@ void cell_balancing(float *voltage,float *current, float *temperature);
 void discharge_check(float *voltage,float *current, float *temperature,sof_Error_Checks);
 //this function checks if any cell is discharged below the minimum threshold voltage
 //fault handler include from main for each error
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// 03-07-2025                   
+// SPI Lines 
+#define CS 
+#define MOSI
+#define MISO 
+#define SCLK 
+
+
+
+
+
+
