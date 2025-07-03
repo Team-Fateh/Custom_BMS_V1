@@ -42,3 +42,26 @@ void discharge_check(float *voltage,float *current, float *temperatures,sof_Erro
 			//terminate the system
 			//stop... discharge
 }
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// Voltage Acquistion 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
